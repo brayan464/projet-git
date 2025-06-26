@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nom du Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h1><!-- Titre page contact depuis la base --></h1>
+            <p><!-- Introduction contact depuis la base --></p>
+            
+            <address>
+                <h2>Coordonnées</h2>
+                <p><!-- Adresse depuis la base --></p>
+                <p>Téléphone: <!-- Numéro depuis la base --></p>
+                <p>Email: <!-- Email depuis la base --></p>
+            </address>
+        </section>
+
+        <section class="contact-form">
+            <h2>Formulaire de contact</h2>
+            <form action="traitement.php" method="POST">
+                <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="sujet">Sujet:</label>
+                    <input type="text" id="sujet" name="sujet" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="map">
+            <h2>Nous trouver</h2>
+            <!-- Intégration Google Maps ou autre -->
+            <iframe src="<!-- Lien carte depuis la base -->"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nom du Site. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
